@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href=".\css\Student_reg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registration Form</h1>
+      <div class="form-data">
+        <form enctype="multipart/form-data">
+          <table>
+            <tr>
+              <td class="td-width">
+                <label for="fname">Enter FullName</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="First, Middle, Last"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="age">Enter the Age</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  placeholder="Enter the age between 1 to 100"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="age">Select Gender</label>
+              </td>
+              <td>
+                <input type="radio" id="male" name="gender" value="male" /> Male
+                <input type="radio" id="female" name="gender" value="female" />
+                Female
+                <input type="radio" id="other" name="gender" value="other" />
+                Other
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="email">Enter Email Address</label>
+              </td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Please enter valid email"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="email">Select Class</label>
+              </td>
+              <td>
+                <select id="class">
+                  <!-- <optgroup label="Pune">
+                    <option>Class1</option>
+                    <option>Class1</option>
+                    <option>Class1</option>
+                    <option>Class1</option>
+                  </optgroup>
+                  <optgroup label="Nashik">
+                    <option>Class1</option> 
+                    <option>Class1</option>
+                    <option>Class1</option>
+                  </optgroup> -->
+                  <option>----Select----</option>
+                  <option value="bca">BCA</option>
+                  <option value="bca">MCA</option>
+                  <option value="bca">B.Tech</option>
+                  <option value="bca">M.Tech</option>
+                  <option value="bca">BCS</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="hobbies">Select Your Hobbies</label>
+              </td>
+              <td>
+                <input type="checkbox" id="reading" value="reading" /> Reading
+                <input type="checkbox" id="cooking" value="cooking" /> Cooking
+                <input type="checkbox" id="song" value="song" /> Listen Song
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="country">Select Country</label>
+              </td>
+              <td>
+                <select class="cnt">
+                  <option value="select">----Select-----</option>
+                  <option value="ind">India</option>
+                  <option value="aus">Austrlia</option>
+                  <option value="eng">England</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="country">Enter FullAddress</label>
+              </td>
+              <td>
+                <textarea id="add" rows="5"></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-width">
+                <label for="photo">Select Photo</label>
+              </td>
+              <td>
+                <input type="file" id="photo" />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <!-- <input type="submit" value="Submit" />
+                <input type="button" value="Submit" /> -->
+                <button class="submit">
+                  <i class="fa-solid fa-cloud-arrow-up fa-bounce"></i> Submit
+                </button>
+                <button class="clr">
+                  <i class="fa-solid fa-trash-arrow-up fa-shake"></i> Clear Data
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
