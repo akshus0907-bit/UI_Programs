@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --paddingAll: 20px;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:60%;
+            min-height:100px;
+            border:1px solid lightgray;
+            margin:auto;
+        }
+        .container h2{
+            text-align:center;
+            padding:var(--paddingAll);
+        }
+        .container h2::before{
+            content:"😊";
+        }
+        .container h2::after{
+            content: ",java";
+        }
+        .container p::first-line{
+            color:red;
+        /*background-color:black;*/
+        padding:10px;
+        }
+        .container p::first-letter{
+            font-size: 34px;
+            font-weight: bold;
+
+        }
+        /*""selection{
+        background-color:lightseagreen;
+        }*/
+        .container p::selection{
+            background-color: lightseagreen;
+        }
+        .container p{
+            padding: var(--paddingAll);
+            text-align:jistify;
+        }
+        .pass{
+            padding:10px;
+        }
+        input[type="text"]{
+            padding: 8px;
+        }
+        input[type="text"]::placeholder{
+            color:red;
+            text-align:center;
+        }
+        li::marker{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome To Css</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum iure consequatur optio sapiente, aliquam reiciendis obcaecati placeat nemo, doloribus quia odit enim alias! Suscipit expedita aperiam eaque quae tempore?</p> <br>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iste optio voluptates, illo blanditiis quas illum fuga voluptatem. Quasi aut repellendus accusamus delectus harum eveniet sint eaque itaque rem.</p>
+        <form>
+            <div class="pass">
+                <input type="text" placeholder="Enter password">
+                <br><br>
+                <ul>
+                    <li>javaScript</li>
+                    <li>pythone</li>
+
+                </ul>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
