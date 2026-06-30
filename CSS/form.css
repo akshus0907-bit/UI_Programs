@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:900px;
+    height:500px;
+    background:#fff;
+    display:flex;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Left Side */
+
+.left-panel{
+    width:35%;
+    background:linear-gradient(135deg,#45d3c2,#30b39d);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.left-panel h1{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.left-panel p{
+    line-height:28px;
+    margin-bottom:40px;
+}
+
+.left-panel button{
+    width:180px;
+    padding:14px;
+    border:2px solid white;
+    border-radius:30px;
+    background:transparent;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.left-panel button:hover{
+    background:white;
+    color:#30b39d;
+}
+
+/* Right Side */
+
+.right-panel{
+    width:65%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.right-panel h1{
+    color:#28b6a4;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.social-icons div{
+    width:45px;
+    height:45px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.social-icons div:hover{
+    background:#28b6a4;
+    color:white;
+}
+
+.text{
+    color:gray;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.right-panel input{
+    width:350px;
+    padding:14px;
+    margin:10px;
+    border:none;
+    background:#f3f3f3;
+    font-size:15px;
+    outline:none;
+}
+
+.signup{
+    margin-top:25px;
+    width:180px;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#28b6a4;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.signup:hover{
+    background:#1b9a8a;
+}
