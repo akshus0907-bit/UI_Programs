@@ -1,0 +1,33 @@
+body{
+   background-color: deeppink;
+}
+
+.box{
+   width: 60%;
+   height: 300px;
+   border: 1px solid black;
+   margin: auto;
+   background-color: mediumspringgreen;
+  
+}
+.box h1{
+   text-align: center;
+}
+table{
+   width: 100%;
+   height: 221px;
+   margin: auto;
+   border: 1px solid black;
+   
+}
+table th{
+   color: white;
+}
+table th,td{
+
+   border: 1px solid black;
+   
+}
+td:hover{
+   background-color: blue;
+}
